@@ -1,0 +1,53 @@
+{
+	"admin - hanle action": {
+		"prefix": "adminhanaction",
+		"body": [
+			"[actionNames.$1](state, action) {",
+			"  $2",
+			"  return {",
+			"    ...state,",
+			"  };",
+			"},"
+		],
+		"description": "Create a handle api action in reducer"
+	},
+	"admin - hanle api action": {
+		"prefix": "adminhanapiaction",
+		"body": [
+			"[apiActionNames.$1.request](state, action) {",
+			"  return {",
+			"    ...state,",
+			"    ${2:loading}: true,",
+			"  };",
+			"},",
+			"[apiActionNames.$1.success](state, action) {",
+			"  return {",
+			"    ...state,",
+			"    ${2:loading}: false,",
+			"  };",
+			"},",
+			"[apiActionNames.$1.error](state, action) {",
+			"  return {",
+			"    ...state,",
+			"    ${2:loading}: false,",
+			"  };",
+			"},"
+		],
+		"description": "Create a handle api action in reducer"
+	},
+	"admin - create api config": {
+		"prefix": "admincreapi",
+		"body": [
+			", {",
+			"  path: '$1',",
+			"  actionName: apis.$2,",
+			"}"
+		],
+		"description": "Create a api config"
+	},
+	"admin - import listReducers": {
+		"prefix": "adminimtlist",
+		"body": "import { makeListHandleActions, ListState } from '../../util/listReducers';",
+		"description": "import listReducers"
+	}
+}

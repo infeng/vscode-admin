@@ -1,0 +1,46 @@
+{
+  "name": "vscode-admin",
+  "version": "1.0.0",
+  "description": "Code snippets for react admin",
+  "displayName": "React admin app snippets",
+  "publisher": "infeng",
+  "icon": "images/react.png",
+  "galleryBanner": {
+    "theme": "light"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infeng/vscode-admin.git"
+  },
+  "engines": {
+    "vscode": "0.10.x"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "react",
+    "vscode",
+    "typescript",
+    "vscode-extension",
+    "admin"
+  ],
+  "author": "infeng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/infeng/vscode-admin/issues"
+  },
+  "homepage": "https://github.com/infeng/vscode-admin#readme",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.ts.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.tsx.json"
+      }
+    ]
+  }
+}
