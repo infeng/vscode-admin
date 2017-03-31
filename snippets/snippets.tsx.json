@@ -38,7 +38,7 @@
 			"<Route",
 			"  path=\"${1:}\"",
 			"  getComponents={(nextState, cb) => {",
-			"    require.ensure([], (require) => {",
+			"    require.ensure([], (require: any) => {",
 			"      let Component = require('../containers/${2:}');",
 			"      cb(null, {",
 			"        [nextState.routes[2].path]: Component,",
