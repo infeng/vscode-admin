@@ -24,6 +24,8 @@ Alternatively you can open the extensions panel and search for 'Typescript React
 
 Below is a list of all available snippets and the triggers of each one. The **⇥** means the `TAB` key.
 
+### Typescript & TypescriptReact
+
 | Trigger  | Content |
 | -------: | ------- |
 | `adminhanaction→` | `Create a handle api action in reducer` |
@@ -40,6 +42,12 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `admins2p→`  | `Create a mapState2Props item` |
 | `admindispatch→`  | `Create a dispatch` |
 | `adminapidispatch→`  | `Create a dispatch` |
+
+### Less
+
+| Trigger  | Content |
+| -------: | ------- |
+| `adminless` | `Create a less template` |
 
 ## License
 
