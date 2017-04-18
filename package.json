@@ -40,6 +40,10 @@
       {
         "language": "typescriptreact",
         "path": "./snippets/snippets.tsx.json"
+      },
+      {
+        "language": "less",
+        "path": "./snippets/snippets.less.json"
       }
     ]
   }

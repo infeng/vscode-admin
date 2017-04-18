@@ -1,0 +1,16 @@
+{
+  "admin less template": {
+    "prefix": "adminless",
+    "body": [
+      "@import \"../../style/index.less\";",
+      "",
+      "@prefix-cls: ~\"@{base-prefix}-$1\";",
+      "",
+      ".@{prefix-cls} {",
+      "  $2",
+      "}",
+      ""
+    ],
+    "description": "Create a less template"
+  }  
+}
