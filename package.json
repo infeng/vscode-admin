@@ -39,7 +39,7 @@
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/snippets.tsx.json"
+        "path": "./snippets/snippets.ts.json"
       },
       {
         "language": "less",

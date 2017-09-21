@@ -49,5 +49,171 @@
 		"prefix": "adminimtlist",
 		"body": "import { makeListHandleActions, ListState } from '../../util/listReducers';",
 		"description": "import listReducers"
-	}
+	},
+	"admin - React Component": {
+		"prefix": "admintsrcc",
+		"body": [
+			"import * as React from 'react';",
+      "import { connect } from 'react-redux';",
+      "import { TokenState } from '../../../models/common/token';",
+			"",
+			"export interface ${1:App}Props {",
+      "  token: TokenState;",
+			"  dispatch: any;",
+			"}",
+			"",
+			"class ${1:} extends React.Component<${1:}Props, any> {",
+			"  render() {",
+			"    return (",
+			"      <div>",
+			"        ${2:}",
+			"      </div>",
+			"    );",
+			"  }",
+			"}",
+			"",
+      "const mapState2Props = state => {",
+      "  const { token } = state;",
+      "  return {",
+      "    token,",
+      "  };",
+      "};",
+			"export default connect(mapState2Props)(${1:});",
+			""
+		],
+		"description": "Create a React Component with typescript."
+	},
+	"adminadmin - Route item": {
+		"prefix": "adminrouteitem",
+		"body": [
+			"<Route",
+			"  path=\"${1:}\"",
+			"  getComponents={(nextState, cb) => {",
+			"    require.ensure([], (require: any) => {",
+			"      let Component = require('../containers/${2:}');",
+			"      cb(null, {",
+			"        [nextState.routes[2].path]: Component,",
+			"      });",
+			"    }, '${3:}');",
+			"  }}",
+			"/>"
+		],
+		"description": "Create a Route item"
+	},
+	"adminadmin - Route request Component": {
+		"prefix": "adminreqcom",
+		"body": [
+			"let $1 = require('../containers/$2');"
+		],
+		"description": "Create a require Component in Route"
+	},
+	"adminadmin - Field": {
+		"prefix": "adminfield",
+		"body": [
+			"$1: new Field('$1', '$2'),"
+		],
+		"description": "Create a Field"
+	},
+	"adminadmin - mapPropsToFields": {
+		"prefix": "adminp2f",
+		"body": [
+			"const mapPropsToFields = (props: $1) => {",
+			"  let data = props.data;",
+			"  return {",
+			"    $2",
+			"  };",
+			"};"
+		],
+		"description": "Create a mapPropsToFields item"
+	},
+	"adminadmin - mapPropsToFields item": {
+		"prefix": "adminp2fitem",
+		"body": [
+			"[formFields.$1.name]: {value: data.$2},"
+		],
+		"description": "Create a mapPropsToFields item"
+	},
+	"adminadmin - formitem": {
+		"prefix": "adminformitem",
+		"body": [
+			"<FormItem",
+			"  label={formFields.$1.text}",
+			"  {...FORMITEMLAYOUT}",
+			">",
+			"  {getFieldDecorator(formFields.$1.name, {",
+			"    rules: [{",
+			"      required: true,",
+			"      message: formFields.$1.message(),",
+			"    }],",
+			"  })(",
+			"    $2",
+			"  )}",
+			"</FormItem>"
+		],
+		"description": "Create a formItem"
+	},
+	"adminadmin - table column config": {
+		"prefix": "admintcc",
+		"body": [
+			", {",
+			"  title: '$1',",
+			"  dataIndex: '$2',",
+			"}"
+		],
+		"description": "Create a table column config"
+	},
+	"adminadmin - Route": {
+		"prefix": "adminroute",
+		"body": [
+			"import * as React from 'react';",
+			"import { Route } from 'react-router';",
+			"",
+			"const routes = (",
+			"  <Route path=\"$1\">",
+			"    $2",
+			"  </Route>",
+			");",
+			"",
+			"export default routes;",
+			""
+		],
+		"description": "Create a Route"
+	},
+	"adminadmin - get props": {
+		"prefix": "adminprops",
+		"body": [
+			"const { $1 } = this.props;"
+		],
+		"description": "get props"
+	},
+	"adminadmin - mapState2Props": {
+		"prefix": "admins2p",
+		"body": [
+      "const mapState2Props = state => {",
+      "  const { token } = state;",
+      "  return {",
+      "    token,",
+      "  };",
+      "};"
+		],
+		"description": "Create a mapState2Props item"
+	},
+	"adminadmin - dispatch": {
+		"prefix": "admindispatch",
+		"body": [
+			"dispatch(actions.$1({",
+			"  $2",
+			"}));"
+		],
+		"description": "Create a dispatch"
+	},
+	"adminadmin - api dispatch": {
+		"prefix": "adminapidispatch",
+		"body": [
+			"dispatch(apiActions.$1({",
+			"  $2",
+			"}));"
+		],
+		"description": "Create a dispatch"
+	}	
 }
