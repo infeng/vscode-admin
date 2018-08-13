@@ -2,7 +2,7 @@
 
 -------------------
 
-This extension contains code snippets for [react-admin](https://github.com/infeng/inf-fed-dev#inf-react-admin-appname-options).
+This extension contains code snippets for `dfxk admin app`.
 
 ## Installation
 
