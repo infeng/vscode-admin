@@ -28,20 +28,18 @@ Below is a list of all available snippets and the triggers of each one. The **�
 
 | Trigger  | Content |
 | -------: | ------- |
-| `adminhanaction→` | `Create a handle api action in reducer` |
+| `rqr→` | `Require` |
+| `adminformtsrcc→` | `Create a form Component` |
+| `admintabletsrcc→` | `Create a table Component` |
+| `admintableactioncolumn→` | `Create table action column` |
+| `admintabletoolbar→` | `Create table toolbars` |
+| `admintablecolumnitem→` | `Create table column item` |
+| `adminhanaction→` | `Create a handle simple action in reducer` |
 | `adminhanapiaction→`| `Create a handle api action in reducer` |
 | `admincreapi→`| `Create a api config` |
-| `admintsrcc→` | `Create a simple React Component` |
-| `adminrouteitem→` | `Create a Route item` |
-| `adminreqcom→`  | `Create a require Component in Route` |
-| `adminfield→`   | `Create a Field` |
-| `adminp2fitem→`   | `Create a mapPropsToFields item` |
 | `adminformitem→`   | `Create a formItem` |
-| `admintcc→`   | `Create a table column config` |
-| `adminroute→`   | `Create a Route` |
-| `admins2p→`  | `Create a mapState2Props item` |
 | `admindispatch→`  | `Create a dispatch` |
-| `adminapidispatch→`  | `Create a dispatch` |
+| `adminprops→`  | `Get props` |
 
 ### Less
 
