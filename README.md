@@ -2,7 +2,7 @@
 
 -------------------
 
-This extension contains code snippets for `dfxk admin app`.
+This extension contains code snippets for `epig admin app`.
 
 ## Installation
 
@@ -40,6 +40,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `adminformitem→`   | `Create a formItem` |
 | `admindispatch→`  | `Create a dispatch` |
 | `adminprops→`  | `Get props` |
+| `adminmodel→`  | `Create a model` |
 
 ### Less
 
