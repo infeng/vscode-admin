@@ -360,5 +360,31 @@
 			"}));"
 		],
 		"description": "Create a dispatch"
-	}
+	},
+	"Admin Model": {
+		"prefix": "adminmodel",
+		"body": [
+			"import createModel from '@epig/luna/model';",
+			"",
+			"export interface $1State {",
+			"$3",
+			"}",
+			"",
+			"export default createModel({",
+			"  modelName: '$2',",
+			"  action: {",
+			"    simple: {$4},",
+			"    api: {$5},",
+			"  },",
+			"  reducer: ({ createReducer }) => {",
+			"    return createReducer<$1State>({$6}, {$7});",
+			"  },",
+			"  sagas: () => {",
+			"    return [];",
+			"  },",
+			"});",
+			""
+		],
+		"description": "Create a React Component with typescript."
+	},
 }
