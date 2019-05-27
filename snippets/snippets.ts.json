@@ -178,13 +178,13 @@
 			"{",
 			"  title: '操作',",
 			"  dataIndex: 'actions',",
-			"  render: renderActions(record => (",
+			"  render: renderActions(record => {",
 			"    return (",
 			"      <>",
 			"        $0",
 			"      </>",
 			"    );",
-			"  )),",
+			"  }),",
 			"},"
 		]
 	},
