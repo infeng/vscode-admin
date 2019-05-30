@@ -370,7 +370,7 @@
 			"$3",
 			"}",
 			"",
-			"export default createModel({",
+			"const $2Model = createModel({",
 			"  modelName: '$2',",
 			"  action: {",
 			"    simple: {$4},",
@@ -383,8 +383,48 @@
 			"    return [];",
 			"  },",
 			"});",
+			"",
+			"export default $2Model",
 			""
 		],
-		"description": "Create a React Component with typescript."
+		"description": "Create a model."
+	},
+	"Admin List Model": {
+		"prefix": "adminlistmodel",
+		"body": [
+			"import createModel from '@epig/luna/model';",
+			"import { makeListHandleActions, ListState } from '@epig/admin-tools/lib/model/listReducers';",
+			"",
+			"export interface $1State extends ListState<any> {",
+			"$3",
+			"}",
+			"",
+			"const $2Model = createModel({",
+			"  modelName: '$2',",
+			"  action: {",
+			"    simple: {$4},",
+			"    api: {",
+			"      getList: {",
+			"        path: '/${5:getList}',",
+			"      },",
+			"    },",
+			"  },",
+			"  reducer: ({ apiActionNames, createReducer }) => {",
+			"    const listHandle = makeListHandleActions(apiActionNames.getList);",
+			"     return createReducer<$1State, any>({",
+			"      ...listHandle.handleActions,",
+			"    }, {",
+			"      ...listHandle.initializeState,",
+		  "    });",
+			"  },",
+			"  sagas: () => {",
+			"    return [];",
+			"  },",
+			"});",
+			"",
+			"export default $2Model",
+			""
+		],
+		"description": "Create a list model."
 	}
 }
