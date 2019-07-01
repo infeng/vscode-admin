@@ -377,14 +377,14 @@
 			"    api: {$5},",
 			"  },",
 			"  reducer: ({ createReducer }) => {",
-			"    return createReducer<$1State>({$6}, {$7});",
+			"    return createReducer<$1State, any>({$6}, {$7});",
 			"  },",
 			"  sagas: () => {",
 			"    return [];",
 			"  },",
 			"});",
 			"",
-			"export default $2Model",
+			"export default $2Model;",
 			""
 		],
 		"description": "Create a model."
