@@ -28,19 +28,23 @@ Below is a list of all available snippets and the triggers of each one. The **�
 
 | Trigger  | Content |
 | -------: | ------- |
-| `rqr→` | `Require` |
-| `adminformtsrcc→` | `Create a form Component` |
-| `admintabletsrcc→` | `Create a table Component` |
-| `admintableactioncolumn→` | `Create table action column` |
-| `admintabletoolbar→` | `Create table toolbars` |
-| `admintablecolumnitem→` | `Create table column item` |
-| `adminhanaction→` | `Create a handle simple action in reducer` |
-| `adminhanapiaction→`| `Create a handle api action in reducer` |
-| `admincreapi→`| `Create a api config` |
-| `adminformitem→`   | `Create a formItem` |
-| `admindispatch→`  | `Create a dispatch` |
-| `adminprops→`  | `Get props` |
-| `adminmodel→`  | `Create a model` |
+| `rqr` | `Require` |
+| `adminformtsrcc` | `Create a form Component` |
+| `admintabletsrcc` | `Create a table Component` |
+| `admintableactioncolumn` | `Create table action column` |
+| `admintabletoolbar` | `Create table toolbars` |
+| `admintablecolumnitem` | `Create table column item` |
+| `adminhanaction` | `Create a handle simple action in reducer` |
+| `adminhanapiaction`| `Create a handle api action in reducer` |
+| `admincreapi`| `Create a api config` |
+| `adminformitem`   | `Create a formItem` |
+| `admindispatch`  | `Create a dispatch` |
+| `adminprops`  | `Get props` |
+| `adminmodel`  | `Create a model` |
+| `adminlistmodel`  | `Create a list model` |
+| `adminc`  | `Simple Container[Hooks]` |
+| `admintablec`  | `Table Container[Hooks]` |
+| `adminformc`  | `Form Container[Hooks]` |
 
 ### Less
 
