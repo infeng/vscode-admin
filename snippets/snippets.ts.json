@@ -364,7 +364,7 @@
 	"Admin Model": {
 		"prefix": "adminmodel",
 		"body": [
-			"import createModel from '@epig/luna/model';",
+			"import { createModel } from '@epig/luna';",
 			"",
 			"export interface $1State {",
 			"$3",
@@ -392,7 +392,7 @@
 	"Admin List Model": {
 		"prefix": "adminlistmodel",
 		"body": [
-			"import createModel from '@epig/luna/model';",
+			"import { createModel } from '@epig/luna';",
 			"import { makeListHandleActions, ListState } from '@epig/admin-tools/lib/model/listReducers';",
 			"",
 			"export interface $1State extends ListState<any> {",
